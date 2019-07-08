@@ -1,15 +1,16 @@
-import React, { Fragment, useState } from 'react';
+// import React, { Fragment, useState } from 'react';
+import React from 'react';
 import Navbar from './components/layout/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Users from './components/Users/Users';
+import Home from './components/pages/Home';
 import User from './components/Users/User';
-import Search from './components/Users/Search';
 import Alert from './components/layout/Alert';
 import About from './components/pages/About';
+import NotFound from './components/pages/NotFound';
 // import axios from 'axios';
 
 import GithubState from './context/github/GithubState';
-// import AlertState from './context/alert/AlertState';
+import AlertState from './context/alert/AlertState';
 import './App.css';
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
   // const [user, setUser] = useState({});
   // const [repos, setRepos] = useState([]);
   // const [loading, setLoading] = useState(false);
-  const [alert, setAlert] = useState(null);
+  // const [alert, setAlert] = useState(null);
 
   // state = {
   //   users: [],
@@ -93,14 +94,14 @@ const App = () => {
   // };
 
   // show alert
-  const showAlert = (msg, type) => {
-    setAlert({ msg, type });
-    // console.log(this); // App object
-    setTimeout(() => {
-      // console.log(this); // window object
-      setAlert(null);
-    }, 2000);
-  };
+  // const showAlert = (msg, type) => {
+  //   setAlert({ msg, type });
+  //   // console.log(this); // App object
+  //   setTimeout(() => {
+  //     // console.log(this); // window object
+  //     setAlert(null);
+  //   }, 2000);
+  // };
 
   // const name = 'Bowei Yao';
   // const foo = () => 'fooFunc';
@@ -120,28 +121,29 @@ const App = () => {
   // );
   return (
     <GithubState>
-      {/* <AlertState> */}
+      <AlertState>
         <Router>
           <div className='App'>
             <Navbar />
             <div className='container'>
-              <Alert alert={alert}/>
+              <Alert />
               <Switch>
                 <Route
                   exact
                   path='/'
-                  render={ props => (
-                    <Fragment>
-                      <Search
-                        // clearUsers={clearUsers}
-                        // showClear={users.length > 0 ? true : false}
-                        setAlert={showAlert}
-                      />
-                      {/* <Users users={users} loading={loading} /> */}
-                      {/* dont need to pass props from here anymore */}
-                      <Users />
-                    </Fragment>
-                  )}
+                  // render={props => (
+                  //   <Fragment>
+                  //     <Search
+                  //     // clearUsers={clearUsers}
+                  //     // showClear={users.length > 0 ? true : false}
+                  //     // setAlert={showAlert}
+                  //     />
+                  //     {/* <Users users={users} loading={loading} /> */}
+                  //     {/* dont need to pass props from here anymore */}
+                  //     <Users />
+                  //   </Fragment>
+                  // )}
+                  component = {Home}
                 />
                 <Route exact path='/about' component={About} />
                 <Route
@@ -159,11 +161,12 @@ const App = () => {
                   //   />
                   // )}
                 />
+                <Route component = {NotFound} />
               </Switch>
             </div>
           </div>
         </Router>
-      {/* </AlertState> */}
+      </AlertState>
     </GithubState>
   );
 };

@@ -5,5 +5,5 @@ export const CLEAR_USERS = 'CLEAR_USERS';
 export const GET_REPOS = 'GET_REPOS';
 export const SET_LOADING = 'SET_LOADING';
 // alert
-export const SHOW_ALERT = 'SHOW_ALERT';
+export const SET_ALERT = 'SHOW_ALERT';
 export const REMOVE_ALERT = 'REMOVE_ALERT';
