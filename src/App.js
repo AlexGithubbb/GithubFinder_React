@@ -161,7 +161,7 @@ const App = () => {
                   //   />
                   // )}
                 />
-                <Route component={NotFound} />
+                {/* <Route component={NotFound} /> */}
               </Switch>
             </div>
           </div>
