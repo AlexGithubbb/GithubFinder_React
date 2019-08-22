@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/GithubFinder_React/static/css/main.907e54b2.chunk.css",
-    "main.js": "/GithubFinder_React/static/js/main.0e0ca5f6.chunk.js",
-    "main.js.map": "/GithubFinder_React/static/js/main.0e0ca5f6.chunk.js.map",
-    "runtime~main.js": "/GithubFinder_React/static/js/runtime~main.82628d9e.js",
-    "runtime~main.js.map": "/GithubFinder_React/static/js/runtime~main.82628d9e.js.map",
-    "static/js/2.77a2554e.chunk.js": "/GithubFinder_React/static/js/2.77a2554e.chunk.js",
-    "static/js/2.77a2554e.chunk.js.map": "/GithubFinder_React/static/js/2.77a2554e.chunk.js.map",
-    "index.html": "/GithubFinder_React/index.html",
-    "precache-manifest.d19bec6c097c2340a7a897c7c1807d65.js": "/GithubFinder_React/precache-manifest.d19bec6c097c2340a7a897c7c1807d65.js",
-    "service-worker.js": "/GithubFinder_React/service-worker.js",
-    "static/css/main.907e54b2.chunk.css.map": "/GithubFinder_React/static/css/main.907e54b2.chunk.css.map"
+    "main.css": "https://alexgithubbb.github.io/GithubFinder_React/static/css/main.907e54b2.chunk.css",
+    "main.js": "https://alexgithubbb.github.io/GithubFinder_React/static/js/main.2a3248dc.chunk.js",
+    "main.js.map": "https://alexgithubbb.github.io/GithubFinder_React/static/js/main.2a3248dc.chunk.js.map",
+    "runtime~main.js": "https://alexgithubbb.github.io/GithubFinder_React/static/js/runtime~main.83059bb7.js",
+    "runtime~main.js.map": "https://alexgithubbb.github.io/GithubFinder_React/static/js/runtime~main.83059bb7.js.map",
+    "static/js/2.77a2554e.chunk.js": "https://alexgithubbb.github.io/GithubFinder_React/static/js/2.77a2554e.chunk.js",
+    "static/js/2.77a2554e.chunk.js.map": "https://alexgithubbb.github.io/GithubFinder_React/static/js/2.77a2554e.chunk.js.map",
+    "index.html": "https://alexgithubbb.github.io/GithubFinder_React/index.html",
+    "precache-manifest.a97d0e0d71240114ade01952e4214667.js": "https://alexgithubbb.github.io/GithubFinder_React/precache-manifest.a97d0e0d71240114ade01952e4214667.js",
+    "service-worker.js": "https://alexgithubbb.github.io/GithubFinder_React/service-worker.js",
+    "static/css/main.907e54b2.chunk.css.map": "https://alexgithubbb.github.io/GithubFinder_React/static/css/main.907e54b2.chunk.css.map"
   }
 }
