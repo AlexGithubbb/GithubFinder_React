@@ -5,7 +5,6 @@ import Repos from '../repos/Repos';
 // import PropTypes from 'prop-types';
 import GithubContext from '../../context/github/githubContext';
 
-
 // const User = ({ loading, repos, getUser, getUserRepos, user, match }) => {
 const User = ({ match }) => {
   // class way of life circle
@@ -14,8 +13,8 @@ const User = ({ match }) => {
   //   getUserRepos(match.params.login); // getUserRepos(username)
   // }
 
-  const githubContext = useContext(GithubContext)
-  const { getUser, user, loading, repos, getUserRepos} = githubContext;
+  const githubContext = useContext(GithubContext);
+  const { getUser, user, loading, repos, getUserRepos } = githubContext;
   // useEffect way of life circle
   useEffect(() => {
     getUser(match.params.login); // getUser(username)
@@ -79,13 +78,13 @@ const User = ({ match }) => {
             Visit Github Profile
           </a>
           <ul>
-              {login && (
+            {login && (
               <li>
                 <Fragment>
                   <strong>Username: {login}</strong>
                 </Fragment>
               </li>
-              )}
+            )}
             <li>
               {company && (
                 <Fragment>
@@ -105,8 +104,8 @@ const User = ({ match }) => {
       </div>
       <div className='card text-center'>
         <div className='badge badge-primary'>Followers: {followers}</div>
-        <div className='badge badge-success'>Following: {following}</div>
-        <div className='badge badge-light'>Public Repos: {public_repos}</div>
+        <div className='badge badge-secondary'>Following: {following}</div>
+        <div className='badge badge-success'>Public Repos: {public_repos}</div>
         <div className='badge badge-dark'>Public Gists: {public_gists}</div>
       </div>
       <Repos repos={repos} />

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types'; // for type checking
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // stateful component
 // class Navbar extends Component {
@@ -24,20 +24,19 @@ import {Link} from 'react-router-dom';
 // }
 
 // functional component
-const Navbar = ({title, icon}) => {
-
+const Navbar = ({ title, icon }) => {
   return (
-    <div className='navbar bg-primary'>
+    <div className='navbar bg-secondary'>
       <h1>
         <i className={icon} /> {title}
       </h1>
       <ul>
         <li>
           {/* <a href="/">Home</a> */}
-          <Link to="/">Home</Link>
+          <Link to='/'>Home</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to='/about'>About</Link>
         </li>
       </ul>
     </div>
