@@ -1,16 +1,16 @@
-import React, {useState, useContext}from 'react';
+import React, { useState, useContext } from 'react';
 // import PropTypes from 'prop-types';
 import GithubContext from '../../context/github/githubContext';
 import AlertContext from '../../context/alert/alertContext';
 
 // const  Search = ({setAlert}) =>  {
-const  Search = () =>  {
+const Search = () => {
   // state = {
   //   text: ''
   // };
 
-  const githubContext  = useContext(GithubContext)
-  const alertContext  = useContext(AlertContext)
+  const githubContext = useContext(GithubContext);
+  const alertContext = useContext(AlertContext);
 
   const [text, setText] = useState('');
 
@@ -23,41 +23,46 @@ const  Search = () =>  {
     } else {
       githubContext.searchUsers(text);
       // this.setState({ text: '' });
-      setText('')
+      setText('');
     }
   };
 
-    return (
-      <div>
-        <form className='form' onSubmit={onSubmit}>
-          <input
-            type='text'
-            name='text'
-            placeholder='Search Users...'
-            value={text}
-            onChange={onChange}
-          />
-          <input
-            type='submit'
-            value='Search'
-            className='btn btn-dark btn-block'
-          />
-        </form>
-        {/* {showClear && (
+  return (
+    <div>
+      <form className='form' onSubmit={onSubmit}>
+        <input
+          type='text'
+          name='text'
+          placeholder='Search Users...'
+          value={text}
+          onChange={onChange}
+        />
+        <button type='submit' className='btn btn-dark btn-block my-1'>
+          <h3>
+            <i className='fas fa-search fa-1x' /> Search
+          </h3>
+        </button>
+      </form>
+      {/* {showClear && (
           <button className='btn btn-light btn-block' onClick={githubContext.clearUsers}>
             Clear
           </button>
         )} */}
-        {githubContext.users.length > 0 && (
-          <button className='btn btn-light btn-block' onClick={githubContext.clearUsers}>
-            Clear
-          </button>
-        )}
-      </div>
-    );
-}
+      {githubContext.users.length > 0 && (
+        <button
+          className='btn btn-light btn-block'
+          onClick={githubContext.clearUsers}
+        >
+          <h3>
+            <i className='fas fa-eraser fa-1x' /> Clear
+          </h3>
+        </button>
+      )}
+    </div>
+  );
+};
 
-  // add proptypes
+// add proptypes
 //   Search.propTypes = {
 //   // clearUsers: PropTypes.func.isRequired,
 //   // showClear: PropTypes.bool.isRequired,

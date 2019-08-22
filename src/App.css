@@ -3,6 +3,7 @@
 /* Global Styles */
 :root {
   --primary-color: #dc3545;
+  --secondary-color: #64277c;
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -176,6 +177,12 @@ img {
 .my-3 {
   margin: 3rem 0;
 }
+.my-4 {
+  margin: 4rem 0;
+}
+.my-5 {
+  margin: 5rem 0;
+}
 
 /* Grid */
 .grid-2 {
@@ -250,6 +257,14 @@ img {
 .badge-primary,
 .alert-primary {
   background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-secondary,
+.bg-secondary,
+.badge-secondary,
+.alert-secondary {
+  background: var(--secondary-color);
   color: #fff;
 }
 

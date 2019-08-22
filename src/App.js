@@ -139,11 +139,11 @@ const App = () => {
                   //     // setAlert={showAlert}
                   //     />
                   //     {/* <Users users={users} loading={loading} /> */}
-                  //     {/* dont need to pass props from here anymore */}
+                  //     {/* no need to pass props from here anymore */}
                   //     <Users />
                   //   </Fragment>
                   // )}
-                  component = {Home}
+                  component={Home}
                 />
                 <Route exact path='/about' component={About} />
                 <Route
@@ -161,7 +161,7 @@ const App = () => {
                   //   />
                   // )}
                 />
-                <Route component = {NotFound} />
+                <Route component={NotFound} />
               </Switch>
             </div>
           </div>
