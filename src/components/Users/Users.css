@@ -1,0 +1,30 @@
+.userStyle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .userStyle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .userStyle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .userStyle {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+}
+
+/* 480px */
+/* right wider than left */
