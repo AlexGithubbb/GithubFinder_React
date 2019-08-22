@@ -35,6 +35,7 @@ const Search = () => {
           name='text'
           placeholder='Search Users...'
           value={text}
+          style={{ outline: 'none' }}
           onChange={onChange}
         />
         <button type='submit' className='btn btn-dark btn-block my-1'>
